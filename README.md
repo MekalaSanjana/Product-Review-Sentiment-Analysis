@@ -1,177 +1,123 @@
+<div align="center">
+
 # 🛍️ Product Review Sentiment Analysis
 
-## 📌 Project Overview
+**Turn raw customer reviews into clear, actionable insights.**
 
-The **Product Review Sentiment Analysis** project aims to analyze customer reviews and classify them into three sentiment categories: **Positive, Negative, and Neutral**.
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+![NLTK](https://img.shields.io/badge/NLTK-NLP-154F5B)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-By leveraging Natural Language Processing (NLP) and Machine Learning techniques, this project identifies customer opinions, evaluates product feedback, and provides meaningful insights into customer satisfaction.
+</div>
 
-The analysis helps businesses understand customer preferences, identify product strengths and weaknesses, and make data-driven decisions to improve product quality and customer experience.
+---
 
-⭐ If you find this project useful, please consider giving it a star on GitHub! Contributions and suggestions are always welcome.
+## 📌 Overview
 
-## 📸 Project Screenshot
+This project classifies customer reviews as **Positive**, **Negative**, or **Neutral** using the review text and its associated metadata. By understanding how customers feel, businesses can identify product strengths and weaknesses, respond to feedback faster, and improve the overall customer experience.
 
-![Product Review Sentiment Analysis Dashboard](Screenshot%20(130).png)
+> ⭐ If you find this project useful, please consider giving it a star on GitHub. Contributions are welcome!
+
+![Project Screenshot](<Screenshot (130).png>)
 
 ## 📑 Table of Contents
 
-- [Technologies Used](#-technologies-used)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Features](#-features)
 - [Project Structure](#-project-structure)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Author](#-author)
 - [Contact](#-contact)
 
-## 🛠️ Technologies Used
+## ✨ Features
 
-The following tools and technologies were used to develop this project:
+- **Sentiment classification** of reviews into positive, negative, or neutral
+- **Visual insights** into sentiment distribution across product categories
+- **Real-time prediction** for reviews typed in by the user
+- **Interactive dashboard** for exploring customer feedback
 
-- **Python** – Programming language
-- **Streamlit** – Interactive web application and dashboard
-- **Scikit-learn** – Machine Learning and sentiment classification
-- **NLTK** – Natural Language Processing and text preprocessing
-- **Pandas** – Data manipulation and analysis
-- **NumPy** – Numerical computations
-- **Matplotlib** – Data visualization
-- **Seaborn** – Statistical data visualization
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| Language | Python |
+| Web App | Streamlit |
+| Machine Learning | Scikit-learn |
+| NLP | NLTK |
+| Data Handling | Pandas, NumPy |
+| Visualisation | Matplotlib, Seaborn |
 
 ## ⚙️ Installation
 
-Follow these steps to download and run the project locally.
-
-**Step 1: Clone the repository**
-
 ```bash
+# 1. Clone the repository
 git clone https://github.com/MekalaSanjana/Product-Review-Sentiment-Analysis.git
-```
 
-**Step 2: Navigate to the project directory**
-
-```bash
+# 2. Navigate into the project directory
 cd Product-Review-Sentiment-Analysis
-```
 
-**Step 3: Create a virtual environment**
-
-```bash
+# 3. Create a virtual environment
 python -m venv Product_Review_Analysis
-```
 
-**Step 4: Activate the virtual environment**
-
-For Windows:
-
-```bash
+# 4. Activate the virtual environment
+# On Windows
 Product_Review_Analysis\Scripts\activate
-```
-
-For macOS/Linux:
-
-```bash
+# On macOS/Linux
 source Product_Review_Analysis/bin/activate
-```
 
-**Step 5: Install the required dependencies**
-
-```bash
+# 5. Install dependencies
 pip install -r requirements.txt
 ```
 
 ## 🚀 Usage
 
-After successfully installing the dependencies, run the following command to launch the Streamlit application:
+Run the Streamlit app:
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your default web browser.
-
-You can then:
-
-1. Enter customer product reviews.
-2. Analyze the sentiment of the submitted reviews.
-3. View sentiment predictions as Positive, Negative, or Neutral.
-4. Explore visualizations showing sentiment distribution across product categories.
-5. Gain insights into customer feedback through the interactive dashboard.
-
-## ✨ Features
-
-- **Sentiment Classification:** Classifies customer reviews into Positive, Negative, and Neutral categories.
-- **Real-Time Sentiment Prediction:** Predicts the sentiment of user-submitted product reviews.
-- **Interactive Dashboard:** Provides an easy-to-use interface for exploring customer feedback.
-- **Sentiment Distribution Visualization:** Displays the distribution of positive, negative, and neutral reviews.
-- **Product Category Analysis:** Helps compare customer sentiment across different product categories.
-- **Data Visualization:** Presents meaningful insights using Matplotlib and Seaborn.
-- **NLP-Based Text Processing:** Uses Natural Language Processing techniques to prepare review text for sentiment analysis.
+The app opens in your browser, where you can enter a review and view the predicted sentiment along with the dashboard visualisations.
 
 ## 📂 Project Structure
 
 ```text
 Product-Review-Sentiment-Analysis/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── LICENSE
-│
-├── Screenshot (130).png
-│
-└── Other project files and datasets
+├── app.py              # Streamlit application
+├── requirements.txt    # Project dependencies
+├── LICENSE             # MIT License
+└── README.md
 ```
 
-*Note: Update this structure according to the actual files and folders in your repository.*
+> Update this tree to match your actual files (for example, data, model, or notebook folders).
 
 ## 🤝 Contributing
 
-Contributions are always welcome! If you would like to improve this project or add new features, follow these steps:
+Contributions are welcome! To contribute:
 
-1. Fork this repository.
-2. Create a new feature branch:
-
-   ```bash
-   git checkout -b feature-name
-   ```
-
-3. Commit your changes:
-
-   ```bash
-   git commit -m "Add some feature"
-   ```
-
-4. Push your changes:
-
-   ```bash
-   git push origin feature-name
-   ```
-
-5. Open a Pull Request describing your changes.
+1. Fork the repository
+2. Create a new feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m "Add some feature"`
+4. Push to the branch: `git push origin feature-name`
+5. Open a pull request
 
 ## 📄 License
 
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute this project according to the terms of the license.
-
-For more information, please refer to the [LICENSE](LICENSE) file.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ## 👩‍💻 Author
 
 **Mekala Sanjana**
-
-Analysis Project Portfolio
+Data Analytics Portfolio Project
 
 ## 📬 Contact
 
-For questions, suggestions, collaborations, or feedback, feel free to connect with me:
+For inquiries or feedback, reach out here:
 
-- **LinkedIn:** [Mekala Sanjana](https://www.linkedin.com/in/mekala-sanjana/)
-- **GitHub:** [MekalaSanjana](https://github.com/MekalaSanjana)
-
----
-
-⭐ **If you like this project, don't forget to give it a star!**
-
-Thank you for visiting my project repository! 😊
+- 💼 LinkedIn: [linkedin.com/in/mekala-sanjana](https://www.linkedin.com/in/mekala-sanjana/)
+- 🐙 GitHub: [github.com/MekalaSanjana](https://github.com/MekalaSanjana)
